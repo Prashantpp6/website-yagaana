@@ -26,19 +26,40 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
+
+.about h2 {
+  font-size: 35px;
+  color: #000F38;
+  margin: 10px 0;
+  max-width: 400px;
+}
+
 .about h3 {
-  font-weight: 600;
-  font-weight: 16px;
+  font-weight: 600; /* Removed the redundant font-weight property */
+  font-size: 16px; /* Changed from font-weight to font-size */
   color: #212EA0;
 }
-.about h2 {
- font-size: 35px;
- color: #000F38;
- margin: 10px 0;
- max-width: 400px;
-}
-.about p{
+
+.about p {
   color: #676767;
   margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .left {
+    flex-basis: 100%;
+    margin: 20px 0; /* Changed margin to vertical for spacing */
+    order: 2;
+  }
+
+  .about .right {
+    flex-basis: 100%;
+    margin: 20px 0; /* Added margin for spacing */
+  }
 }

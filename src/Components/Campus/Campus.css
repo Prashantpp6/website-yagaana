@@ -1,0 +1,48 @@
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; /* More even distribution */
+  gap: 20px; /* Space between images */
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 23%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #212ea0;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.btn img {
+  margin-left: 10px; /* Space between button text and image */
+}
+
+.btn:hover {
+  background-color: #1a1e7c; /* Darker shade on hover */
+}
+
+@media (max-width: 800px) {
+  .gallery img {
+    width: 48%; /* Adjusted width for smaller screens */
+    margin-bottom: 25px; /* Space below images */
+  }
+}
